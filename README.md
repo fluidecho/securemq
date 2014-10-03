@@ -161,19 +161,19 @@ setInterval(function(){
 
 ## Options
 
-  - `hwm`: _Infinity_, number of messages before High Water Mark is breached.
-  - `server_name`: _'securemq'_, HTTP 'server' name.
-  - `throw_error`: _true_, if catch socket connection error, throw error.
-  - `retry`: _Infinity_, number of times to try reconnecting.
-  - `secure`: _false_, if true: will use HTTPS key, cert and apikey as Basic Auth, if false: uses HTTP.
-  - `key`: _'/key.pem'_, if secure true: path to TLS/SSL key file.
-  - `cert`: _'/cert.pem'_, if secure true: path to TLS/SSL certificate file.
-  - `apikey`: _za91j2bk72f483ap62x_, if secure true: will use this as Basic Auth.
-  - `rejectUnauthorized`: _false_, if secure true and if using a self-signed certificate.
-  - `hostname`: _'127.0.0.1'_
-  - `port`: _3443_
-  - `protocol`: _'amp'_, messages can be sent in either: 'amp' (Abstract Message Protocol) or 'ldjson' (Line Delimited JSON).
-  - `reconnecttime`: _3000_, milliseconds after reconnection attempt.
+  - `hwm`, (number) of messages before High Water Mark is breached.
+  - `server_name`, (string) HTTP 'server' name.
+  - `throw_error`, (boolean) if catch socket connection error, throw error.
+  - `retry`, (number) of times to try reconnecting.
+  - `secure`, (boolean) if true: will use HTTPS key, cert and apikey as Basic Auth, if false: uses HTTP.
+  - `key`, (filename) if secure true: path to TLS/SSL key file.
+  - `cert`, (filename) if secure true: path to TLS/SSL certificate file.
+  - `apikey`, (string) if secure true: will use this as Basic Auth.
+  - `rejectUnauthorized`, (boolean) if secure true and if using a self-signed certificate.
+  - `hostname`, (IP/domain) address to bind or connect.
+  - `port`, (number) port to bind or connect.
+  - `protocol`, (amp|ldjson) messages can be sent in either: 'amp' (Abstract Message Protocol) or 'ldjson' (Line Delimited JSON).
+  - `reconnecttime`, (milliseconds) after reconnection attempt.
 
 
 ## Message Protocol

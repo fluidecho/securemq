@@ -161,19 +161,19 @@ setInterval(function(){
 
 ## Options
 
-  - `hwm`, (number) of messages before High Water Mark is breached.
-  - `server_name`, (string) HTTP 'server' name.
-  - `throw_error`, (boolean) if catch socket connection error, throw error.
-  - `retry`, (number) of times to try reconnecting.
-  - `secure`, (boolean) if true: will use HTTPS key, cert and apikey as Basic Auth, if false: uses HTTP.
-  - `key`, (filename) if secure true: path to TLS/SSL key file.
-  - `cert`, (filename) if secure true: path to TLS/SSL certificate file.
-  - `apikey`, (string) if secure true: will use this as Basic Auth.
-  - `rejectUnauthorized`, (boolean) if secure true and if using a self-signed certificate.
-  - `hostname`, (IP/domain) address to bind or connect.
-  - `port`, (number) port to bind or connect.
-  - `protocol`, (amp|ldjson) messages can be sent in either: 'amp' (Abstract Message Protocol) or 'ldjson' (Line Delimited JSON).
-  - `reconnecttime`, (milliseconds) after reconnection attempt.
+  - `hwm` _(number)_ of messages before High Water Mark is breached.
+  - `server_name` _(string)_ HTTP 'server' name.
+  - `throw_error` _(boolean)_ if catch socket connection error, throw error.
+  - `retry` _(number)_ of times to try reconnecting.
+  - `secure` _(boolean)_ if true: will use HTTPS key, cert and apikey as Basic Auth, if false: uses HTTP.
+  - `key` _(filename)_ if secure true: path to TLS/SSL key file.
+  - `cert` _(filename)_ if secure true: path to TLS/SSL certificate file.
+  - `apikey` _(string)_ if secure true: will use this as Basic Auth.
+  - `rejectUnauthorized` _(boolean)_ if secure true and if using a self-signed certificate.
+  - `hostname` _(IP/domain)_ address to bind or connect.
+  - `port` _(number)_ port to bind or connect.
+  - `protocol` _(amp|ldjson)_ messages can be sent in either: 'amp' (Abstract Message Protocol) or 'ldjson' (Line Delimited JSON).
+  - `reconnecttime` _(milliseconds)_ after reconnection attempt.
 
 
 ## Message Protocol

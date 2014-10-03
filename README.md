@@ -161,19 +161,19 @@ setInterval(function(){
 
 ## Options
 
-  - __hwm__: _Infinity_                // number of messages before High Water Mark is breached.
-  - __server_name__: _'securemq'_      // HTTP 'server' name.
-  - __throw_error__: _true_            // if catch socket connection error, throw error.
-  - __retry__: _Infinity_              // number of times to try reconnecting.
-  - __secure__: _false_                // if true: will use HTTPS key, cert and apikey as Basic Auth, if false: uses HTTP.
-  - __key__: _'/key.pem'_              // if secure true: path to TLS/SSL key file.
-  - __cert__: _'/cert.pem'_            // if secure true: path to TLS/SSL certificate file.
-  - __apikey__: _za91j2bk72f483ap62x_  // if secure true: will use this as Basic Auth.
-  - __rejectUnauthorized__: _false_    // if secure true and if using a self-signed certificate.
-  - __hostname__: _'127.0.0.1'_
-  - __port__: _3443_
-  - __protocol__: _'amp'_              // messages can be sent in either: 'amp' (Abstract Message Protocol) or 'ldjson' (Line Delimited JSON).
-  - __reconnecttime__: _3000_          // milliseconds after reconnection attempt.
+  - `hwm`: _Infinity_, number of messages before High Water Mark is breached.
+  - `server_name`: _'securemq'_, HTTP 'server' name.
+  - `throw_error`: _true_, if catch socket connection error, throw error.
+  - `retry`: _Infinity_, number of times to try reconnecting.
+  - `secure`: _false_, if true: will use HTTPS key, cert and apikey as Basic Auth, if false: uses HTTP.
+  - `key`: _'/key.pem'_, if secure true: path to TLS/SSL key file.
+  - `cert`: _'/cert.pem'_, if secure true: path to TLS/SSL certificate file.
+  - `apikey`: _za91j2bk72f483ap62x_, if secure true: will use this as Basic Auth.
+  - `rejectUnauthorized`: _false_, if secure true and if using a self-signed certificate.
+  - `hostname`: _'127.0.0.1'_
+  - `port`: _3443_
+  - `protocol`: _'amp'_, messages can be sent in either: 'amp' (Abstract Message Protocol) or 'ldjson' (Line Delimited JSON).
+  - `reconnecttime`: _3000_, milliseconds after reconnection attempt.
 
 
 ## Message Protocol

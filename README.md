@@ -18,7 +18,7 @@ From your terminal, requires [nodeJS](http://nodejs.org/).
 npm install securemq
 ```
 
-If using the __secure__ option you will need to have TLS (SSL) key and certificate files. These can be built using OpenSSL for example:
+If using the __secure__ option you will need to have TLS (SSL) key and certificate files. These can be built using OpenSSL, for example:
 
 Key, _key.pem_ file:
 
@@ -161,21 +161,20 @@ setInterval(function(){
 
 ## Options
 
-```
-__hwm__: _Infinity_,                // number of messages before High Water Mark is breached.
-__server_name__: _'securemq'_,      // HTTP 'server' name.
-__throw_error__: _true_,            // if catch socket connection error, throw error.
-__retry__: _Infinity_,              // number of times to try reconnecting.
-__secure__: _false_,                // if true: will use HTTPS key, cert and apikey as Basic Auth, if false: uses HTTP.
-__key__: _'/key.pem'_,              // if secure true: path to TLS/SSL key file.
-__cert__: _'/cert.pem'_,            // if secure true: path to TLS/SSL certificate file.
-__apikey__: _undefined_,            // if secure true: will use this as Basic Auth.
-__rejectUnauthorized__: _false_,    // if secure true and if using a self-signed certificate.
-__hostname__: _'127.0.0.1'_,
-__port__: _3443_,
-__protocol__: _'amp'_,              // messages can be sent in either: 'amp' (Abstract Message Protocol) or 'ldjson' (Line Delimited JSON).
-__reconnecttime__: _3000_           // milliseconds after reconnection attempt.
-```
+  - __hwm__: _Infinity_                // number of messages before High Water Mark is breached.
+  - __server_name__: _'securemq'_      // HTTP 'server' name.
+  - __throw_error__: _true_            // if catch socket connection error, throw error.
+  - __retry__: _Infinity_              // number of times to try reconnecting.
+  - __secure__: _false_                // if true: will use HTTPS key, cert and apikey as Basic Auth, if false: uses HTTP.
+  - __key__: _'/key.pem'_              // if secure true: path to TLS/SSL key file.
+  - __cert__: _'/cert.pem'_            // if secure true: path to TLS/SSL certificate file.
+  - __apikey__: _za91j2bk72f483ap62x_  // if secure true: will use this as Basic Auth.
+  - __rejectUnauthorized__: _false_    // if secure true and if using a self-signed certificate.
+  - __hostname__: _'127.0.0.1'_
+  - __port__: _3443_
+  - __protocol__: _'amp'_              // messages can be sent in either: 'amp' (Abstract Message Protocol) or 'ldjson' (Line Delimited JSON).
+  - __reconnecttime__: _3000_          // milliseconds after reconnection attempt.
+
 
 ## Message Protocol
 

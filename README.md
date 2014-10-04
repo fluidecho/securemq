@@ -176,6 +176,13 @@ setInterval(function(){
   - `protocol` _(amp|ldjson)_ messages can be sent in either: 'amp' (Abstract Message Protocol) or 'ldjson' (Line Delimited JSON).
   - `reconnecttime` _(milliseconds)_ after reconnection attempt.
 
+## Refresh apikeys
+
+Can refresh the `bind` peers list of `apikeys`:
+
+```
+kurunt.refreshApikeys(['mynewapikey']);
+```
 
 ## Message Protocol
 

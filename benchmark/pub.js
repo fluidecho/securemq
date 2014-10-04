@@ -14,9 +14,9 @@ var options = {
   hostname: '127.0.0.1',
   port: 3443,
   secure: false,
-  key: __dirname + '/keys/test-key.pem',
-  cert: __dirname + '/keys/test-cert.pem',
-  apikey: 'za91j2bk72f483ap62x',
+  key: __dirname + '/keys/key.pem',
+  cert: __dirname + '/keys/cert.pem',
+  apikeys: ['za91j2bk72f483ap62x'],
   protocol: 'amp' 
 };
 var service = securemq.bind(options);

@@ -73,7 +73,7 @@ var options = {
   secure: true,
   key: __dirname + '/key.pem',
   cert: __dirname + '/cert.pem',
-  apikey: 'za91j2bk72f483ap62x' 
+  apikeys: ['za91j2bk72f483ap62x'] 
 };
 var service = securemq.bind(options);
 
@@ -94,7 +94,7 @@ var options = {
   port: 3443, 
   secure: true, 
   rejectUnauthorized: false,
-  apikey: 'za91j2bk72f483ap62x' 
+  apikey: 'za91j2bk72f483ap62x'
 };
 var service = securemq.connect(options);
 
@@ -118,7 +118,7 @@ var options = {
   secure: true,
   key: __dirname + '/key.pem',
   cert: __dirname + '/cert.pem',
-  apikey: 'za91j2bk72f483ap62x' 
+  apikeys: ['za91j2bk72f483ap62x'] 
 };
 var service = securemq.bind(options);
 
@@ -144,7 +144,7 @@ var options = {
   port: 3443, 
   secure: true, 
   rejectUnauthorized: false,
-  apikey: 'za91j2bk72f483ap62x' 
+  apikey: 'za91j2bk72f483ap62x'
 };
 var service = securemq.connect(options);
 
@@ -168,7 +168,8 @@ setInterval(function(){
   - `secure` _(boolean)_ if true: will use HTTPS key, cert and apikey as Basic Auth, if false: uses HTTP.
   - `key` _(filename)_ if secure true: path to TLS/SSL key file.
   - `cert` _(filename)_ if secure true: path to TLS/SSL certificate file.
-  - `apikey` _(string)_ if secure true: will use this as Basic Auth.
+  - `apikeys` _(array)_ if secure true and bind peer, will use this as Basic Auth.
+  - `apikey` _(string)_ if secure true and connecting peer, will use this as Basic Auth.  
   - `rejectUnauthorized` _(boolean)_ if secure true and if using a self-signed certificate.
   - `hostname` _(IP/domain)_ address to bind or connect.
   - `port` _(number)_ port to bind or connect.
@@ -203,21 +204,21 @@ make benchbatch
 ```
 ### Results
 
-Sending a `200` byte sized `batched` `unsecure` message, on my laptop (dual-core i7), I get around __183,546__ messages per second:
+Sending a `200` byte sized `batched` `unsecure` message, on my laptop (dual-core i7), I get around __211,513__ messages per second:
 
 ```
-  [2208 ops/s] [10001]
+  [2569 ops/s] [10001]
 
-      min: 2,208 ops/s
-     mean: 2,211 ops/s
-   median: 2,230 ops/s
-    total: 11,057 ops in 5s
-  through: 0.42 mb/s
+      min: 2,569 ops/s
+     mean: 2,548 ops/s
+   median: 2,594 ops/s
+    total: 12,571 ops in 4.933s
+  through: 0.49 mb/s
 
 ------------------------------
-   events: 917,731
-       id: 23,388
-     mean: 183,546 ops/s.
+   events: 1,043,393
+       id: 24,723
+ *** mean: 211,513 ops/s.
 ------------------------------
 ```
 

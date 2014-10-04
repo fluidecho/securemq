@@ -4,9 +4,9 @@ var securemq = require('./../../');
 var options = { 
   hostname: '127.0.0.1', 
   port: 3443, 
-  secure: false, 
+  secure: true, 
   rejectUnauthorized: false,
-  apikey: 'za91j2bk72f483ap62x' 
+  apikey: 'za91j2bk72f483ap62x'
 };
 var service = securemq.connect(options);
 

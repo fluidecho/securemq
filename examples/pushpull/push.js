@@ -4,10 +4,10 @@ var securemq = require('./../../');
 var options = {
   hostname: '127.0.0.1',
   port: 3443,
-  secure: false,
-  key: __dirname + '/test-key.pem',
-  cert: __dirname + '/test-cert.pem',
-  apikey: 'za91j2bk72f483ap62x' 
+  secure: true,
+  key: __dirname + '/key.pem',
+  cert: __dirname + '/cert.pem',
+  apikeys: ['za91j2bk72f483ap62x']
 };
 var service = securemq.bind(options);
 

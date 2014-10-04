@@ -6,7 +6,7 @@ var options = {
   port: 3443, 
   secure: false, 
   rejectUnauthorized: false,
-  apikey: 'za91j2bk72f483ap62x' 
+  apikey: 'za91j2bk72f483ap62x'
 };
 var service = securemq.connect(options);
 

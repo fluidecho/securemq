@@ -5,9 +5,8 @@ var options = {
   hostname: '127.0.0.1',
   port: 3443,
   secure: false,
-  apikey: 'za91j2bk72f483ap62x',  
   rejectUnauthorized: false,    // false: if using self signed certificate.
-  apikey: 'za91j2bk72f483ap62x' 
+  apikey: 'za91j2bk72f483ap62x'
 };
 var service = securemq.connect(options);
 

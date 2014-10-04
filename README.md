@@ -1,4 +1,4 @@
-# SecureMQ
+# SecureMQ [![Build Status](https://api.travis-ci.org/kurunt/securemq.png)](https://travis-ci.org/kurunt/securemq)
 
 Message-oriented secure service inspired by axon and zeromq.  
 

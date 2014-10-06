@@ -1,6 +1,6 @@
 # SecureMQ [![Build Status](https://api.travis-ci.org/kurunt/securemq.png)](https://travis-ci.org/kurunt/securemq)
 
-Message-oriented secure service inspired by axon and zeromq.  
+Secure message queue inspired by axon and zeromq.  
 
 SecureMQ uses HTTPS for transport rather than plain TCP, this allows SecureMQ to have:
 
@@ -36,6 +36,12 @@ To create a self-signed certificate:
 openssl x509 -req -in cert.pem -signkey key.pem -out cert.pem
 ```
 
+## Message Patterns
+
+  - push / pull
+  - pub / sub
+  - chit / chat
+
 ## Events
 
   - `closed` when peer closes.
@@ -46,12 +52,6 @@ openssl x509 -req -in cert.pem -signkey key.pem -out cert.pem
   - `flushed` (total messages) queued when messages are flushed on connection.
   - `message` (msg) the message received by peer.
 
-## Patterns
-
-  - push / pull
-  - pub / sub
-  - chit / chat
-  
 ## Examples
 
 See `examples` folder. To print debugging info use the _--preview_ argument when running the app, for example:

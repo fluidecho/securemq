@@ -1,6 +1,6 @@
 # SecureMQ [![Build Status](https://api.travis-ci.org/kurunt/securemq.png)](https://travis-ci.org/kurunt/securemq)
 
-Secure message queue service inspired by axon and zeromq.  
+Secure messaging service, like axon or zeromq, but secure.  
 
 SecureMQ uses HTTPS for transport rather than plain TCP, this allows SecureMQ to have:
 

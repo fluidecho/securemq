@@ -1,5 +1,5 @@
-Copyright (c) 2014 Mark W. B. Ashcroft.
-Copyright (c) 2014 Kurunt.
+Copyright (c) 2015 Mark W. B. Ashcroft.
+Copyright (c) 2015 Fluidecho.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

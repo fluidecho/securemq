@@ -1,4 +1,4 @@
-# SecureMQ [![Build Status](https://api.travis-ci.org/kurunt/securemq.png)](https://travis-ci.org/kurunt/securemq)
+# SecureMQ [![Build Status](https://api.travis-ci.org/fluidecho/securemq.png)](https://travis-ci.org/fluidecho/securemq)
 
 Secure messaging service, like axon or zeromq, but secure.  
 

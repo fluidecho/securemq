@@ -2,7 +2,7 @@
 
 Secure messaging service, like axon or zeromq, but secure.  
 
-SecureMQ uses HTTPS for transport rather than plain TCP, this allows SecureMQ to have:
+SecureMQ uses HTTPS for transport rather than plain TCP, this allows SecureMQ to have:  
 
   - encryption (TLS/SSL).
   - authentication (Basic).
